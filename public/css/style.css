@@ -195,6 +195,7 @@ img {
 .article__heading {
     margin-top: 4rem;
     font-weight: 400;
+ 
 }
 
  .article-ul {
@@ -204,27 +205,33 @@ img {
     font-size: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
     display: flex;
     flex-direction: column;
+ 
  }
 
  .article-list__date {
     font-size: var(--font-size-base);
     color: var(--gray);
     width: 260px;
-    display: inline-block;
+    display: flex;
+    text-align: right;
+
+ 
  }
 
  .article-ul li a {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     text-decoration: none;
     margin: 18px 0;
+ 
  }
 
  @media only screen and (min-width: 768px) {
-     .article-ul a {
+     .article-ul li a {
         flex-direction: row;
         align-items: center;
+
      }
 
      .article-list__date {
@@ -266,7 +273,7 @@ img {
     color: var(--black);
 }
 
- .article {
+.article {
     white-space: pre-wrap;
  }
 
